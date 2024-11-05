@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRX Studios</title>
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+        }
+
+        /* Logo Container */
+        .logo-container {
+            text-align: center;
+        }
+
+        /* Navigation Styling */
+        nav {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcb05;
+        }
+
+        /* Cart Icon Styling */
+        .cart-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        /* Eye Icon Styling */
+        .eye-container {
+            position: relative; /* Position relative for better spacing */
+            margin-right: 10px; /* Increased left margin for spacing */
+            margin-top: -100px; /* Increased top margin for more space */
+        }
+
+        .eye-icon {
+            width: 15px; /* Reduced size */
+            height: 15px; /* Reduced size */
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background-color: #000;
+            background-image: url('05.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Grouped Content */
+        .hero-content {
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Title Styling */
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Subtitle Styling */
+        .subtitle {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 5px;
+        }
+
+        /* Call-to-Action Button */
+        .hero-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ffcb05;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #e0b700;
+            color: #111;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Fade-In Animation for Hero Content */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <a href="trx01.html">
+                <img src="logo.png" alt="TRX Studios Logo" style="height: 120px; width: auto;"> <!-- Reduced logo size -->
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="trx01.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Cart Icon without Count -->
+        <div class="cart-container">
+            <a href="cart.html">
+                <img src="cart.png" alt="Cart Icon" class="cart-icon">
+            </a>
+            <!-- Eye Icon for Admin Login -->
+            <div class="eye-container">
+                <a href="login.html">
+                    <img src="dot.png" class="eye-icon"> <!-- Ensure to replace with your eye icon image -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to TRX Studios</h1>
+            <p class="subtitle">Discover exclusive fashion trends and redefine your style with TRX Studios.</p>
+            <a href="shop.html" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TRX Studios | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
